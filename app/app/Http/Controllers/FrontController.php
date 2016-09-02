@@ -16,12 +16,16 @@ class FrontController extends Controller
         $this->middleware('guest');
     }
 
-    public function verification_data()
+    public function verification_data(Request $request)
     {
+        $isAvailable = false;
+
         if ( Auth::attempt(['user' => $request->user, "password" => $request->password]) ) {
-            return "ok";
-        } else {
-            return "error";
-        }
+            $isAvailable = true;
+        } 
+
+        return json_encode(array(
+            'valid' => $isAvailable,
+        ));
     }
 }

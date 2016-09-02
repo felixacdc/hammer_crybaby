@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Illuminate\Contracts\Auth\Guard;
 use Closure;
 
-abstract class class IsType
+abstract class IsType
 {
     private $auth;
     private $redirectUser;

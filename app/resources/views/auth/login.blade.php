@@ -24,21 +24,21 @@
             <p  class="wow zoomIn" data-wow-duration="0.5s" data-wow-delay="2s">BIENVENIDO</p>
 
             {!! Form::open(["url" => 'auth/login', "method" => "POST", 'id' => 'login']) !!}
-            <input type="hidden" name="token" id="token" value="{{ csrf_token() }}">
+                <input type="hidden" name="token" id="token" value="{{ csrf_token() }}">
 
                 <div class="form-group wow zoomIn" data-wow-duration="1.5s" data-wow-delay="2s">
                     <label class="sr-only" for="user">Usuario</label>
-                    {!! Form::text('user', old('user'), ['class' => 'form-control', 'id' => 'user', "placeholder" => "Usuario", "required" => "required"]) !!}
+                    {!! Form::text('user', old('user'), ['class' => 'form-control', "placeholder" => "Usuario", "required" => "required"]) !!}
                 </div>
                 <div class="form-group wow zoomIn" data-wow-duration="1.5s" data-wow-delay="2s">
                     <label class="sr-only" for="password">Contraseña</label>
-                    {!! Form::password("password", ["class" => "form-control", "placeholder" => "Contraseña", "id" => 'password', "required" => "required"]) !!}
+                    {!! Form::password("password", ["class" => "form-control", "placeholder" => "Contraseña", "required" => "required"]) !!}
                 </div>
                 <div class="form-group clearfix wow zoomIn" data-wow-duration="1.5s" data-wow-delay="2s">
                     <a class="pull-right" href="forgot-password.html">Forgot password?</a>
                 </div>
 
-                <button id="send" type="submit" class="btn btn-primary btn-block wow zoomIn" data-wow-duration="1.5s" data-wow-delay="2s">Iniciar Sesión</button>
+                <button id="send" type="button" class="btn btn-primary btn-block wow zoomIn" data-wow-duration="1.5s" data-wow-delay="2s">Iniciar Sesión</button>
             {!! Form::close() !!}
 
             <footer class="page-copyright wow zoomIn" data-wow-duration="1.5s" data-wow-delay="2s">

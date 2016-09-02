@@ -29,7 +29,6 @@ $(document).ready(function() {
         }
     });
 
-    // Validacion de creacion de usuarios
     $("#login").formValidation({
         framework: "bootstrap",
         button: {
@@ -48,9 +47,11 @@ $(document).ready(function() {
                         url: '/auth/verify',
                         headers: {'X-CSRF-TOKEN': $("#token").val()},
                         type: "POST",
-                        data: {
-                            user: $("#user").val(),
-                            password: $("#password").val()
+                        data: function(validator, $field, value) {
+                            return {
+                                user: validator.getFieldElements('user').val(),
+                                password: validator.getFieldElements('password').val()
+                            };
                         }
                     }
                 }
@@ -63,9 +64,28 @@ $(document).ready(function() {
                     },
                     notEmpty: {
                         message: msgRequired
+                    },
+                    remote: {
+                        message: 'El usuario o la contraseña son incorrectos.',
+                        url: '/auth/verify',
+                        headers: {'X-CSRF-TOKEN': $("#token").val()},
+                        type: "POST",
+                        data: function(validator, $field, value) {
+                            return {
+                                user: validator.getFieldElements('user').val(),
+                                password: validator.getFieldElements('password').val()
+                            };
+                        }
                     }
                 }
             }
         }
-    });
+    })
+    .on('change', '[name="user"]', function(e) {
+      $('#login').formValidation('revalidateField', 'user');
+    })
+
+    .on('change', '[name="password"]', function(e) {
+      $('#login').formValidation('revalidateField', 'password');
+    });;
 });
