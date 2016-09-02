@@ -1,0 +1,66 @@
+/* Cambios propios */
+.alert {
+	text-align: center;
+}
+
+.homeloader {
+	display: none;
+}
+
+.alertAdmin {
+	position: absolute !important;
+	z-index: 10000 !important;
+}
+
+.page {
+	-webkit-transition: all 2.5s ease; /* Safari y Chrome */
+	-moz-transition: all 2.5s ease; /* Firefox */
+	-o-transition: all 2.5s ease; /* IE 9 */
+	-ms-transition: all 2.5s ease; /* Opera */
+}
+
+/* View profile */
+.prf-box {
+    display:inline-block;
+    width:100%;
+    margin-bottom:30px;
+}
+.prf-border-head {
+    color: #62a8ea;
+    border-bottom:1px solid #f1f2f7;
+    font-size:16px;
+    font-weight:bold;
+    padding-bottom:10px;
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
+.wk-progress {
+    border-bottom:1px solid #f1f2f7;
+    margin-bottom:20px;
+    width:100%;
+    display:inline-block;
+}
+.pf-status {
+    padding-bottom:25px;
+}
+.tm-avatar img {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+}
+.tm-membr {
+    padding-bottom:12px;
+    margin-bottom:10px;
+}
+.tm-membr .tm {
+    padding-top:10px;
+    display:inline-block;
+    padding-left: 10px;
+}
+.margin_null_bottom {
+    margin-bottom: 0px;
+}
+.model-close-less {
+    margin-top: -5px;
+}
