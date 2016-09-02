@@ -50,4 +50,9 @@ class User extends Model implements AuthenticatableContract,
             return $this->attributes['password'] = bcrypt($value);
         }
     }
+
+    public function is($type)
+    {
+        return $this->id_user_type === $type;
+    }
 }
