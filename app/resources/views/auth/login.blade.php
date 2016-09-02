@@ -38,7 +38,7 @@
                     <a class="pull-right" href="forgot-password.html">Forgot password?</a>
                 </div>
 
-                <button id="ingresar" type="submit" class="btn btn-primary btn-block wow zoomIn" data-wow-duration="1.5s" data-wow-delay="2s">Iniciar Sesión</button>
+                <button id="send" type="submit" class="btn btn-primary btn-block wow zoomIn" data-wow-duration="1.5s" data-wow-delay="2s">Iniciar Sesión</button>
             {!! Form::close() !!}
 
             <footer class="page-copyright wow zoomIn" data-wow-duration="1.5s" data-wow-delay="2s">

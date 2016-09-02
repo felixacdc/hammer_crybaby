@@ -30,7 +30,8 @@
 {!! Html::script('template/js/components/jquery-placeholder.js') !!}
 {!! Html::script('general/js/jquery.introLoader.pack.min.js') !!}
 
-{!! Html::script('general/js/jquery.validate.js') !!}
+{!! Html::script('template/vendor/formvalidation/formValidation.min.js') !!}
+{!! Html::script('template/vendor/formvalidation/framework/bootstrap.min.js') !!}
 {!! Html::script('login/js/login.classes.js') !!}
 {!! Html::script('login/js/login.js') !!}
 {!! Html::script('general/js/wow.min.js') !!}

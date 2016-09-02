@@ -20,6 +20,8 @@ Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
+Route::post("auth/verify", "FrontController@verification_data");
+
 Route::group(['prefix' => 'admin', 'namespace' => '\admin', 'middleware' => ['auth', 'is_admin']], function() {
     Route::get('/', function() {
         return 'admin';

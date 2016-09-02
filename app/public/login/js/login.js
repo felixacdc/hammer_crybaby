@@ -29,33 +29,43 @@ $(document).ready(function() {
         }
     });
 
-    $("#login").validate({
-        rules: {
-            password: {
-                minlength:8
-            }
+    // Validacion de creacion de usuarios
+    $("#login").formValidation({
+        framework: "bootstrap",
+        button: {
+            selector: '#send',
+            disabled: 'disabled'
         },
-        messages: {
+        icon: null,
+        fields: {
             user: {
-                required: requiredVal
+                validators: {
+                    notEmpty: {
+                        message: msgRequired
+                    },
+                    remote: {
+                        message: 'El usuario o la contraseña son incorrectos.',
+                        url: '/auth/verify',
+                        headers: {'X-CSRF-TOKEN': $("#token").val()},
+                        type: "POST",
+                        data: {
+                            user: $("#user").val(),
+                            password: $("#password").val()
+                        }
+                    }
+                }
             },
             password: {
-                required: requiredVal,
-                minlength: "La contraseña debe tener 8 o mas caracteres."
+                validators: {
+                    stringLength: {
+                        min: 8,
+                        message: 'Escriba 8 caracteres'
+                    },
+                    notEmpty: {
+                        message: msgRequired
+                    }
+                }
             }
-        },
-        submitHandler: function(form) {
-            $(".homeloader").removeClass('fadeInDown').addClass('bounceOutUp');
-            $("#login .btn-primary").prop('disabled', true);
-            var verification_data = new Verification($("#user").val(), $("#password").val(), $("#token").val());
-
-            verification_data.verify(function(err) {
-                if (err) {
-                    $(".homeloader").show().addClass('fadeInDown');
-                    $(".page").css('height', '50vh');
-                    $("#login .btn-primary").prop('disabled', false);
-                } else form.submit();
-            });
         }
     });
 });

@@ -29,6 +29,8 @@
   {!! Html::style('template/css/pages/login.css') !!}
   {!! Html::style('template/css/own/my.css') !!}
 
+  {!! Html::style('template/vendor/formvalidation/formValidation.css') !!}
+
   <!-- Fonts -->
   {!! Html::style('template/fonts/web-icons/web-icons.min.css') !!}
   {!! Html::style('template/fonts/brand-icons/brand-icons.min.css') !!}

@@ -1,5 +1,7 @@
 "use strict";
 
+var msgRequired = "Campo requerido.";
+
 (function(){
 
     self.Verification = function(user, password, token) {
