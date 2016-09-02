@@ -43,4 +43,11 @@ class User extends Model implements AuthenticatableContract,
     {
         return $this->belongsTo('App\Models\UserType', 'id_user_type');
     }
+
+    public function setPasswordAttribute($value)
+    {
+        if ( !empty($value) ) {
+            return $this->attributes['password'] = bcrypt($value);
+        }
+    }
 }
