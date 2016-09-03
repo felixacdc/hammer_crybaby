@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Models\Local;
+
 class LocalController extends Controller
 {
     /**
@@ -16,7 +18,8 @@ class LocalController extends Controller
      */
     public function index()
     {
-        return view('admin.local.index');
+        $locals = Local::all();
+        return view('admin.local.index', compact('locals'));
     }
 
     /**

@@ -10,7 +10,7 @@
     {!! Html::style('template/vendor/formvalidation/formValidation.css') !!}
 @endsection
 
-@section('inicioMenu', 'active')
+@section('localsMenu', 'active')
 
 @section('content')
     <!-- Page -->
@@ -36,30 +36,30 @@
                             <th data-tablesaw-priority="persist" class="tablesaw-cell-persist">No.</th>
                             <th>Nombre</th>
                             <th>Telefono</th>
-                            <th>Correo electronico</th>
+                            <th>Facebook</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {{-- @foreach($teachers as $key => $value)
+                        @foreach($locals as $key => $value)
                             <tr>
                                 <td>{{ $key + 1 }}</td>
                                 <td>{{ $value->name }}</td>
                                 <td>{{ $value->phone }}</td>
-                                <td>{{ $value->email }}</td>
+                                <td>{{ $value->facebook }}</td>
                                 <td class="text-center">
-                                    <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/administrator/teacher/{{ $value->id }}" data-title="Ver Profesor">
+                                    <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/{{ $value->id }}" data-title="Ver Profesor">
                                         <i class="icon wb-eye" aria-hidden="true"></i>
                                     </button>
-                                   <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/administrator/teacher/{{ $value->id }}/edit" data-title="Actualizar Profesor">
+                                   <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/{{ $value->id }}/edit" data-title="Actualizar Profesor">
                                        <i class="icon wb-pencil" aria-hidden="true"></i>
                                    </button>
-                                   <button type="button" name="delete" class="btn btn-icon btn-danger btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/administrator/teacher/showDelete/{{ $valdata-tablesaw-priority="persist"ue->id }}" data-title="Eliminar Profesor">
+                                   <button type="button" name="delete" class="btn btn-icon btn-danger btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/showDelete/{{ $value->id }}" data-title="Eliminar Profesor">
                                        <i class="icon wb-trash" aria-hidden="true"></i>
                                    </button>
                                 </td>
                             </tr>
-                        @endforeach --}}
+                        @endforeach
                     </tbody>
                     </table>
                 </div>
@@ -70,6 +70,9 @@
 @endsection
 
 @section('scripts')
+
+    {{-- @include('admin.layout.partials.modal') --}}
+
     {!! Html::script('template/vendor/datatables/jquery.dataTables.min.js') !!}
     {!! Html::script('template/vendor/datatables-bootstrap/dataTables.bootstrap.js') !!}
     {!! Html::script('template/vendor/datatables-responsive/dataTables.responsive.js') !!}
