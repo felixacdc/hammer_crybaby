@@ -1037,7 +1037,6 @@
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     {!!Html::script('assets/owl.carousel.min.js')!!}
     {!!Html::script('assets/js/mousescroll.js')!!}
-    <script src="js/"></script>
     {!!Html::script('assets/jsmousescroll.js')!!}
     {!!Html::script('assets/js/smoothscroll.js')!!}
     {!!Html::script('assets/js/jquery.prettyPhoto.js')!!}
