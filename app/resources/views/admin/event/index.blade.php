@@ -27,32 +27,38 @@
             <!-- Panel Basic -->
             <div class="panel">
                 <header class="panel-heading">
-                    <h3 class="panel-title">Locales</h3>
+                    <div class="panel-actions text-right">
+                        <button type="button" name="create" class="btn btn-primary btn-sm loadModal spaceRight" data-toggle='modal' data-target='#generalModal' data-url="/admin/events/create" data-title="Crear Profesor">
+                            <i class="icon wb-plus" aria-hidden="true"></i>
+                            Crear Evento
+                        </button>
+                    </div>
+                    <h3 class="panel-title">Evento</h3>
                 </header>
                 <div class="panel-body">
                     <table class="table tablesaw table-hover dataTable table-striped tablesaw-swipe tablesaw-fix-persist" data-tablesaw-mode="swipe" data-tablesaw-minimap="" id="table-9456" data-plugin="dataTable">
                     <thead>
                         <tr>
                             <th data-tablesaw-priority="persist" class="tablesaw-cell-persist">No.</th>
-                            <th>Nombre</th>
-                            <th>Telefono</th>
-                            <th>Facebook</th>
+                            <th>Descripción</th>
+                            <th>Fecha</th>
+                            <th>Importancia</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($locals as $key => $value)
+                        @foreach($events as $key => $value)
                             <tr>
                                 <td>{{ $key + 1 }}</td>
-                                <td>{{ $value->name }}</td>
-                                <td>{{ $value->phone }}</td>
-                                <td>{{ $value->facebook }}</td>
+                                <td>{{ $value->description }}</td>
+                                <td>{{ $value->date }}</td>
+                                <td>{{ $value->importance }} puntos</td>
                                 <td class="text-center">
-                                    <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/news/showNews/{{ $value->id }}" data-title="Ver Noticias">
-                                        <i class="icon wb-eye" aria-hidden="true"></i>
-                                    </button>
-                                   <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal loadNews" data-toggle='modal' data-target='#generalModal' data-url="/admin/news/create" data-title="Crear Noticia" data-id="{{ $value->id }}">
+                                   <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/events/{{ $value->id }}/edit" data-title="Actualizar Profesor">
                                        <i class="icon wb-pencil" aria-hidden="true"></i>
+                                   </button>
+                                   <button type="button" name="delete" class="btn btn-icon btn-danger btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/events/showDelete/{{ $value->id }}" data-title="Eliminar Profesor">
+                                       <i class="icon wb-trash" aria-hidden="true"></i>
                                    </button>
                                 </td>
                             </tr>
@@ -79,11 +85,4 @@
     {!! Html::script('general/js/my.table.js') !!}
     {!! Html::script('template/vendor/formvalidation/formValidation.min.js') !!}
     {!! Html::script('template/vendor/formvalidation/framework/bootstrap.min.js') !!}
-
-    <script>
-        $('.loadNews').on('click', function(e){
-            e.preventDefault();
-            id_local = $(this).data('id');
-        });
-    </script>
 @endsection
