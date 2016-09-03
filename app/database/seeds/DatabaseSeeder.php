@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call(TypeUserTableSeeder::class);
         $this->call(UserTableSeeder::class);
-        $post = factory('App\Models\Local', 50)->create();
+        //$post = factory('App\Models\Local', 50)->create();
 
         Model::reguard();
     }

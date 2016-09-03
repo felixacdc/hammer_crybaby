@@ -10,6 +10,7 @@ use App\Http\Requests\createLocalRequest;
 use App\Http\Requests\editLocalRequest;
 
 use App\Models\Local;
+use App\Models\Category;
 
 class LocalController extends Controller
 {
@@ -31,7 +32,8 @@ class LocalController extends Controller
      */
     public function create()
     {
-        return view('admin.local.create');
+        $categories = $this->fillCombo(Category::all(), 'description');
+        return view('admin.local.create',compact('categories'));
     }
 
     /**
@@ -126,5 +128,16 @@ class LocalController extends Controller
 
 
         }
+    }
+
+    private function fillCombo($data, $field)
+    {
+        $dataCombo = ['' => 'Seleccione una opción'];
+
+        foreach ($data as $value) {
+            $dataCombo[$value->id] = $value->$field;
+        }
+
+        return $dataCombo;
     }
 }
