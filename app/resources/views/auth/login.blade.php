@@ -28,17 +28,17 @@
 
                 <div class="form-group wow zoomIn" data-wow-duration="1.5s" data-wow-delay="2s">
                     <label class="sr-only" for="user">Usuario</label>
-                    {!! Form::text('user', old('user'), ['class' => 'form-control', "placeholder" => "Usuario", "required" => "required"]) !!}
+                    {!! Form::text('user', old('user'), ['class' => 'form-control', "id" => "user", "placeholder" => "Usuario", "required" => "required"]) !!}
                 </div>
                 <div class="form-group wow zoomIn" data-wow-duration="1.5s" data-wow-delay="2s">
                     <label class="sr-only" for="password">Contraseña</label>
-                    {!! Form::password("password", ["class" => "form-control", "placeholder" => "Contraseña", "required" => "required"]) !!}
+                    {!! Form::password("password", ["class" => "form-control", "id" => "password", "placeholder" => "Contraseña", "required" => "required"]) !!}
                 </div>
                 <div class="form-group clearfix wow zoomIn" data-wow-duration="1.5s" data-wow-delay="2s">
                     <a class="pull-right" href="forgot-password.html">Forgot password?</a>
                 </div>
 
-                <button id="send" type="button" class="btn btn-primary btn-block wow zoomIn" data-wow-duration="1.5s" data-wow-delay="2s">Iniciar Sesión</button>
+                {!! Form::submit('Iniciar Sesión', ['class' => 'btn btn-primary btn-block wow zoomIn', 'id' => 'send', "data-wow-duration" => "1.5s", "data-wow-delay" => "2s"]) !!}
             {!! Form::close() !!}
 
             <footer class="page-copyright wow zoomIn" data-wow-duration="1.5s" data-wow-delay="2s">

@@ -23,14 +23,12 @@ class FrontController extends Controller
 
     public function verification_data(Request $request)
     {
-        $isAvailable = false;
+        $isAvailable = "error";
 
-        if ( Auth::attempt(['user' => $request->user, "password" => $request->password]) ) {
-            $isAvailable = true;
+        if ( Auth::once(['user' => $request->user, "password" => $request->password]) ) {
+            $isAvailable = "ok";
         } 
 
-        return json_encode(array(
-            'valid' => $isAvailable,
-        ));
+        return $isAvailable;
     }
 }

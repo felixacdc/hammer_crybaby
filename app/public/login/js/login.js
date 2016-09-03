@@ -29,6 +29,21 @@ $(document).ready(function() {
         }
     });
 
+    // $("#login").submit(function (e) {
+    //     e.preventDefault();
+    //     $(".homeloader").removeClass('fadeInDown').addClass('bounceOutUp');
+    //     $("#login .btn-primary").prop('disabled', true);
+    //     var verification_data = new Verification($("#user").val(), $("#password").val(), $("#token").val());
+
+    //     verification_data.verify(function(err) {
+    //         if (err) {
+    //             $(".homeloader").show().addClass('fadeInDown');
+    //             $(".page").css('height', '50vh');
+    //             $("#login .btn-primary").prop('disabled', false);
+    //         } else e.submit();
+    //     });
+    // });
+
     $("#login").formValidation({
         framework: "bootstrap",
         button: {
@@ -41,18 +56,6 @@ $(document).ready(function() {
                 validators: {
                     notEmpty: {
                         message: msgRequired
-                    },
-                    remote: {
-                        message: 'El usuario o la contraseña son incorrectos.',
-                        url: '/auth/verify',
-                        headers: {'X-CSRF-TOKEN': $("#token").val()},
-                        type: "POST",
-                        data: function(validator, $field, value) {
-                            return {
-                                user: validator.getFieldElements('user').val(),
-                                password: validator.getFieldElements('password').val()
-                            };
-                        }
                     }
                 }
             },
@@ -64,28 +67,28 @@ $(document).ready(function() {
                     },
                     notEmpty: {
                         message: msgRequired
-                    },
-                    remote: {
-                        message: 'El usuario o la contraseña son incorrectos.',
-                        url: '/auth/verify',
-                        headers: {'X-CSRF-TOKEN': $("#token").val()},
-                        type: "POST",
-                        data: function(validator, $field, value) {
-                            return {
-                                user: validator.getFieldElements('user').val(),
-                                password: validator.getFieldElements('password').val()
-                            };
-                        }
                     }
                 }
             }
         }
     })
-    .on('change', '[name="user"]', function(e) {
-      $('#login').formValidation('revalidateField', 'user');
-    })
+    .on('success.form.fv', function (e) {
+        
+        e.preventDefault();
+        var $form = $(e.target), fv = $form.data('formValidation');
 
-    .on('change', '[name="password"]', function(e) {
-      $('#login').formValidation('revalidateField', 'password');
-    });;
+        $(".homeloader").removeClass('fadeInDown').addClass('bounceOutUp');
+        $("#login .btn-primary").prop('disabled', true);
+
+        var verification_data = new Verification($("#user").val(), $("#password").val(), $("#token").val());
+
+        verification_data.verify(function(err) {
+            if (err) {
+                $(".homeloader").show().addClass('fadeInDown');
+                $(".page").css('height', '50vh');
+                $("#login .btn-primary").prop('disabled', false);
+            } else fv.defaultSubmit();
+        });
+        
+    });
 });
