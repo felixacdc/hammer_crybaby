@@ -48,10 +48,10 @@
                                 <td>{{ $value->phone }}</td>
                                 <td>{{ $value->facebook }}</td>
                                 <td class="text-center">
-                                    <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/news/create" data-title="Ver Profesor">
+                                    <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/news/showNews/{{ $value->id }}" data-title="Ver Noticias">
                                         <i class="icon wb-eye" aria-hidden="true"></i>
                                     </button>
-                                   <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/news/showPayments/{{ $value->id }}" data-title="Actualizar Profesor">
+                                   <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal loadNews" data-toggle='modal' data-target='#generalModal' data-url="/admin/news/create" data-title="Crear Noticia" data-id="{{ $value->id }}">
                                        <i class="icon wb-pencil" aria-hidden="true"></i>
                                    </button>
                                 </td>
@@ -79,4 +79,11 @@
     {!! Html::script('general/js/my.table.js') !!}
     {!! Html::script('template/vendor/formvalidation/formValidation.min.js') !!}
     {!! Html::script('template/vendor/formvalidation/framework/bootstrap.min.js') !!}
+
+    <script>
+        $('.loadNews').on('click', function(e){
+            e.preventDefault();
+            id_local = $(this).data('id');
+        });
+    </script>
 @endsection

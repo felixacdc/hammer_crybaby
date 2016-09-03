@@ -10,6 +10,9 @@ use App\Http\Controllers\Controller;
 use App\Models\Local;
 use App\Models\NewClass;
 
+use App\Http\Requests\NewRequest;
+use App\Http\Requests\NewsEditRequest;
+
 class NewsController extends Controller
 {
     /**
@@ -23,9 +26,9 @@ class NewsController extends Controller
         return view('admin.new.index', compact('locals'));
     }
 
-    public function showPayments($id)
+    public function showNews($id)
     {
-        NewClass::where('id_local', $id)->get();
+        $news = NewClass::where('id_local', $id)->get();
         return view('admin.new.show', compact("news"));
     }
 
@@ -36,7 +39,7 @@ class NewsController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.new.create');
     }
 
     /**
@@ -45,20 +48,15 @@ class NewsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(NewRequest $request)
     {
-        //
-    }
+        try {
+            NewClass::create($request->all());
+            return redirect('admin/news')->with("message", "Registro creado correctamente.");
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
+        } catch (\Exception $e) {
+            return redirect('admin/news')->with("error", "No se pudo realizar la acción.");
+        }
     }
 
     /**
@@ -69,7 +67,8 @@ class NewsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $new = NewClass::find($id);
+        return view('admin.new.edit', compact('new'));
     }
 
     /**
@@ -79,9 +78,29 @@ class NewsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(NewsEditRequest $request, $id)
     {
-        //
+        try {
+
+            $grade = NewClass::find($id);
+            $grade->fill($request->all());
+            $grade->save();
+
+            return redirect('admin/news')->with("message", "Registro actualizado correctamente.");
+
+        } catch (\Exception $e) {
+
+            return redirect('admin/news')->with("error", "No se pudo realizar la acción.");
+
+        }
+    }
+
+    public function showDelete($id)
+    {
+        if ( NewClass::where('id', "=", $id)->count() != 0 )
+            return view('admin.new.delete')->with('id', $id);
+        else
+            abort(404);
     }
 
     /**
@@ -92,6 +111,11 @@ class NewsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try {
+            NewClass::findOrFail($id)->delete();
+            return redirect('admin/news')->with("message", "Registro eliminado correctamente.");
+        } catch (\Exception $e) {
+            return redirect('admin/news')->with("error", "No se pudo realizar la acción.");
+        }
     }
 }

@@ -16,7 +16,7 @@
                 <td>{{ $key+1 }}</td>
                 <td> {{ $data->description }} </td>
                 <td> {{ $data->date }} </td>
-                <td> {{ $data->image }} </td>
+                <td> <img src="/image/{{ $data->image }}" style="width:60px;"> </td>
                 <td class="text-center">
                     <button type="button" name="edit" class="btn btn-info btn-sm reLoadModal spaceRight tooltips" data-url="/admin/news/{{ $data->id }}/edit" data-title="Actualizar Pago" title="" data-placement="top" data-toggle="tooltip" data-original-title="Editar">
                         <i class="fa fa-refresh"></i>
@@ -37,3 +37,9 @@
 </div>
 
 <script>
+    $('.reLoadModal').on('click', function(e){
+        e.preventDefault();
+        var loadModal = new LoadModal($("#containerBase"), $(".titleEdit"), $(this));
+        loadModal.prepareView();
+    });
+</script>
