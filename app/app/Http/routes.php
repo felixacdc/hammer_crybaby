@@ -26,6 +26,10 @@ Route::group(['prefix' => 'admin', 'namespace' => '\admin', 'middleware' => ['au
     });
 
     Route::resource('locals', 'LocalController');
+
+    Route::get('news/showPayments/{id}', 'NewsController@showPayments');
+    Route::get('news/showDelete/{id}', 'NewsController@showDelete');
+    Route::resource('news', 'NewsController');
 });
 
 Route::group(['prefix' => 'user', 'namespace' => '\user', 'middleware' => ['auth', 'is_invited']], function() {

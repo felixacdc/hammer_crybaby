@@ -4,11 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class New extends Model
+class NewClass extends Model
 {
     protected $table = 'news';
 
-    protected $fillable = ["description","image","id_local"];
+    protected $fillable = ["description", "image", "date", "id_local"];
 
     public $relations = [
         'local'
@@ -16,6 +16,6 @@ class New extends Model
 
     public function local()
     {
-        $this->belongsTo(Local::class, 'id_local');
+        return $this->belongsTo('App\Models\Local', 'id_local');
     }
 }
