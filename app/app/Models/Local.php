@@ -8,6 +8,7 @@ class Local extends Model
 {
     protected $table = 'locals';
 
+
     protected $fillable = ['name', 'phone','description','products', 'facebook', 'image'];
 
 
@@ -24,5 +25,16 @@ class Local extends Model
     		->join('genres','genres.id','=','movies.genre_id')
     		->select('movies.*','genres.genre')
     		->get();
+
+   
+
+    public $relations = [
+        'news'
+    ];
+
+    public function news()
+    {
+        $this->hasMany(New::class, 'id_local');
+
     }
 }
