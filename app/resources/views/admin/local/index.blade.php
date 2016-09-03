@@ -8,6 +8,12 @@
     {!! Html::style('assets/vendor/filament-tablesaw/tablesaw.css') !!}
 
     {!! Html::style('template/vendor/formvalidation/formValidation.css') !!}
+
+    <style>
+        .tablesaw-bar.mode-swipe {
+            display: inline-block !important;
+        }
+    </style>
 @endsection
 
 @section('localsMenu', 'active')
@@ -16,8 +22,8 @@
     <!-- Page -->
     <div class="page" >
         <div class="page-content">
-            {{-- @include('admin.layout.partials.alertSuccess')
-            @include('admin.layout.partials.alertErrors') --}}
+            @include('admin.layout.partials.alertSuccess')
+            @include('admin.layout.partials.alertErrors')
             <!-- Panel Basic -->
             <div class="panel">
                 <header class="panel-heading">
@@ -71,7 +77,7 @@
 
 @section('scripts')
 
-    {{-- @include('admin.layout.partials.modal') --}}
+    @include('admin.layout.partials.modal')
 
     {!! Html::script('template/vendor/datatables/jquery.dataTables.min.js') !!}
     {!! Html::script('template/vendor/datatables-bootstrap/dataTables.bootstrap.js') !!}
