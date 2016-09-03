@@ -1,4 +1,4 @@
-{!! Form::model($dataEdit, ["route" => ['admin.locals.update', $dataEdit->id], "method" => "PUT", 'class' => 'form-horizontal', 'id' => 'editForm']) !!}
+{!! Form::model($dataEdit, ["route" => ['admin.locals.update', $dataEdit->id], "method" => "PUT", 'class' => 'form-horizontal', 'id' => 'editForm','files' => true]) !!}
 
     <input type="hidden" name="id" id="id" value="{{ $dataEdit->id }}">
     @include('admin.local.inputs')
