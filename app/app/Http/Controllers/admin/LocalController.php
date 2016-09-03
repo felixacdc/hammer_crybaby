@@ -29,7 +29,7 @@ class LocalController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.local.create');
     }
 
     /**
@@ -40,7 +40,12 @@ class LocalController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            Local::create($request->all());
+            return redirect('admin/locals')->with('message','Registro creado correctamente.');
+        } catch (Exception $e) {
+            return redirect('admin/locals')->with("error", "No se pudo realizar la acción.");
+        }
     }
 
     /**
@@ -51,7 +56,8 @@ class LocalController extends Controller
      */
     public function show($id)
     {
-        //
+        $dataShow=Local::find($id);
+        return view('admin.local.show',compact('dataShow'));
     }
 
     /**
@@ -62,7 +68,7 @@ class LocalController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('admin.local.edit');
     }
 
     /**
