@@ -21,6 +21,12 @@
                 <span class="site-menu-title">Noticias</span>
               </a>
             </li>
+            <li class="site-menu-item @yield('inicioMenu', 'default')">
+              <a href="{{ url('/admin/categories') }}" data-slug="dashboard">
+                <i class="site-menu-icon wb-dashboard" aria-hidden="true"></i>
+                <span class="site-menu-title">Categorias</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>

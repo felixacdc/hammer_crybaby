@@ -34,6 +34,13 @@
 </div>
 
 <div class="form-group">
+    {!! Form::label('id_category','Categoria:', ['class' => 'control-label col-lg-3']) !!}
+    <div class="col-sm-9">
+        {!! Form::select("id_category", $categories, null, ['class' => 'form-control', 'required' => 'required','id'=>'grad']) !!}
+    </div>
+</div>
+
+<div class="form-group">
     {!! Form::label('image','Imagen:', ['class' => 'control-label col-lg-3']) !!}
     <div class="col-sm-9">
         {!! Form::file("image", null, ['class' => 'form-control', 'placeholder' => 'Escribe el telefono', 'required' => 'required', 'autocomplete'=>'off']) !!}

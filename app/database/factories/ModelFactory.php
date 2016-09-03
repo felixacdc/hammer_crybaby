@@ -28,6 +28,7 @@ $factory->define(App\Models\Local::class, function (Faker\Generator $faker) {
         'phone' =>   str_random(10),
         'products' =>   $faker->name,
         'facebook' =>   $faker->name,
+        'id_category'=> 1,
  
     ];
 });

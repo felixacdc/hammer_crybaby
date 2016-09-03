@@ -13,16 +13,16 @@ class CreateNewsTable extends Migration
     public function up()
     {
         Schema::create('news', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->longText('description');
             $table->string('image');
             $table->date('date');
             $table->bigInteger('id_local')->unsigned();
-            $table->timestamps();
 
             $table->foreign('id_local')
                     ->references('id')
                     ->on('locals');
+            $table->timestamps();
         });
     }
 

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\createCategoryRequest;
+
 
 class CategoryController extends Controller
 {
@@ -28,7 +30,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.category.create');
     }
 
     /**
@@ -37,9 +39,14 @@ class CategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(createCategoryRequest $request)
     {
-        //
+        try {
+            Category::create($request->all());
+            return redirect('admin/categories')->with('message','Registro creado correctamente.');
+        } catch (Exception $e) {
+            return redirect('admin/categories')->with("error", "No se pudo realizar la acción.");
+        }
     }
 
     /**
@@ -61,7 +68,13 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $dataEdit=Category::find($id);
+
+        if(empty($dataEdit))
+            abort(404);
+
+
+          return view('admin.category.edit',compact('dataEdit'));
     }
 
     /**
@@ -73,7 +86,27 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        try {
+
+            $local=Category::findOrFail($id);
+            $local->update($request->all());
+            return redirect ('admin/categories')->with('message','Registro actualizado correctamente.');
+
+        } catch (Exception $e) {
+
+            return redirect('admin/categories')->with("error", "No se pudo realizar la acción.");
+
+        }
+
+    }
+
+    public function showDelete($id)
+    {
+        if ( Category::where('id', $id)->count() != 0 )
+             return view('admin.category.delete')->with('id', $id);
+         else
+             abort(404);
+
     }
 
     /**
@@ -84,6 +117,14 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try {
+              Category::findOrFail($id)->delete();
+              return redirect('admin/categories')->with('message','Registro eliminado correctamente.');
+
+        } catch (Exception $e) {
+              return redirect('admin/categories')->with("error", "No se pudo realizar la acción.");
+
+
+        }
     }
 }
