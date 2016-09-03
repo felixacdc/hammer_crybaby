@@ -20,6 +20,10 @@ class CreateLocalsTable extends Migration
             $table->string('products');
             $table->string('facebook');
             $table->string('image');
+            $table->integer('id_category')->unsigned();
+            $table->foreign('id_category')
+                    ->references('id')
+                    ->on('categories');
             $table->timestamps();
         });
     }

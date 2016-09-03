@@ -48,56 +48,16 @@
 									<span class="underline">Servicios</span> <span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu">
-									<li class="menu-item-has-children mega-col-4 dropdown">
-										<h3 class="megamenu-title">Consumo y Salud<span class="caret"></span></h3>
-										<ul class="dropdown-menu">
-											<li><a title="Shop Full With" href="#Hosting">Supermercado</a></li>
-											<li><a title="Shop Detail" href="#Hosting">Farmacia</a></li>
-											<li><a title="Shop Detail" href="#Hosting">Optica</a></li>
-										</ul>
-									</li>
-									<li class="menu-item-has-children mega-col-4 dropdown">
-										<h3 class="megamenu-title">Moda<span class="caret"></span></h3>
-										<ul class="dropdown-menu">
-											<li><a title="Shop Full With" href="#Hosting">Zapaterias</a></li>
-											<li><a title="Shop Detail" href="#Hosting">Ropa</a></li>
-											<li><a title="Shop Detail" href="#Hosting">Accesorios</a></li>
-											<li><a title="Shop Detail" href="#Hosting">Salon de Belleza</a></li>
-										</ul>
-									</li>
-									<li class="menu-item-has-children mega-col-4 dropdown">
-										<h3 class="megamenu-title">Tecnológicos<span class="caret"></span></h3>
-										<ul class="dropdown-menu">
-											<li><a title="Recent Product" href="recent-product.html">Electronicos</a></li>
-											<li><a title="Product by Category" href="product-by-category.html">Celulares</a></li>
-											<li><a title="Product Categories" href="product-categories.html">Instrumentos</a></li>
-										</ul>
-									</li>
-									<li class="menu-item-has-children mega-col-4 dropdown">
-										<h3 class="megamenu-title">Alimentos<span class="caret"></span></h3>
-										<ul class="dropdown-menu">
-											<li><a title="Recent Product" href="recent-product.html">Restaures</a></li>
-											<li><a title="Product by Category" href="product-by-category.html">Pastelerias</a></li>
-											<li><a title="Product by Category" href="product-by-category.html">Heladerias</a></li>
-										</ul>
-									</li>
-									<!-- <li class="menu-item-has-children mega-col-4 dropdown">
-										<h3 class="megamenu-title">Financieros<span class="caret"></span></h3>
-										<ul class="dropdown-menu">
-											<li><a title="Recent Product" href="recent-product.html">Bancos</a></li>
-											<li><a title="Product by Category" href="product-by-category.html">Prestamos</a></li>
-										</ul>
-									</li> -->
-									<li class="menu-item-has-children mega-col-4 dropdown">
-										<h3 class="megamenu-title">Otros Servicios<span class="caret"></span></h3>
-										<ul class="dropdown-menu">
-											<li><a title="Recent Product" href="recent-product.html">Recreación</a></li>
-											<li><a title="Product by Category" href="product-by-category.html">Motocicletas</a></li>
-											<li><a title="Recent Product" href="recent-product.html">Bancos</a></li>
-											<li><a title="Product by Category" href="product-by-category.html">Prestamos</a></li>
-										</ul>
-									</li>
-									<li class="visible-lg-inline mega-col-4"></li>
+									@foreach($categories as $category)
+										<li class="menu-item-has-children mega-col-4 dropdown">
+											<h3 class="megamenu-title">{{ $category->description }}<span class="caret"></span></h3>
+											<ul class="dropdown-menu">
+												@foreach($category->locals as $local)
+													<li><a title="Shop Full With" href="#Hosting">$local->name</a></li>
+												@endforeach
+											</ul>
+										</li>
+									@endforeach
 								</ul>
 							</li>
 

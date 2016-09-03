@@ -11,7 +11,7 @@ class Local extends Model
     protected $table = 'locals';
 
 
-    protected $fillable = ['name', 'phone','description','products', 'facebook', 'image'];
+    protected $fillable = ['name', 'phone','description','products', 'facebook', 'image','id_category'];
 
 
     public function setImageAttribute($path){
@@ -24,8 +24,15 @@ class Local extends Model
 
 
     public $relations = [
-        'news'
+        'news',
+        'category',
     ];
+
+    public function category()
+    {
+        return $this->belongsTo('App\Models\Category', 'id_category');
+
+    }
 
     public function news()
     {

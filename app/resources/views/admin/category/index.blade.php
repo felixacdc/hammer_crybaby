@@ -52,13 +52,10 @@
                                 <td>{{ $value->description }}</td>
                                 <td> <img src="/image/{{$value->image}}" alt="" style="width:80px;"></td>
                                 <td class="text-center">
-                                    <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/{{ $value->id }}" data-title="Ver Local">
-                                        <i class="icon wb-eye" aria-hidden="true"></i>
-                                    </button>
-                                   <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/{{ $value->id }}/edit" data-title="Actualizar Profesor">
+                                   <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/categories/{{ $value->id }}/edit" data-title="Actualizar Categoria">
                                        <i class="icon wb-pencil" aria-hidden="true"></i>
                                    </button>
-                                   <button type="button" name="delete" class="btn btn-icon btn-danger btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/showDelete/{{ $value->id }}" data-title="Eliminar Profesor">
+                                   <button type="button" name="delete" class="btn btn-icon btn-danger btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/categories/showDelete/{{ $value->id }}" data-title="Eliminar Profesor">
                                        <i class="icon wb-trash" aria-hidden="true"></i>
                                    </button>
                                 </td>

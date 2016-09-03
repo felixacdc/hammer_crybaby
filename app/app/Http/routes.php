@@ -29,6 +29,8 @@ Route::group(['prefix' => 'admin', 'namespace' => '\admin', 'middleware' => ['au
     Route::get('locals/showDelete/{id}', 'LocalController@showDelete');
 
     Route::resource('categories','CategoryController');
+    Route::resource('categories/showDelete/{id}','CategoryController@showDelete');
+
     
 
 

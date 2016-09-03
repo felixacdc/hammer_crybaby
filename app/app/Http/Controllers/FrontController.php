@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\User;
 use Auth;
+use App\Models\Category;
 
 class FrontController extends Controller
 {
@@ -18,7 +19,8 @@ class FrontController extends Controller
 
     public function index()
     {
-        return view('page.index');        
+        $categories = Category::all();
+        return view('page.index', compact("categories"));        
     }
 
     public function verification_data(Request $request)
