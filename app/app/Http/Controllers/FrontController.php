@@ -16,6 +16,11 @@ class FrontController extends Controller
         $this->middleware('guest');
     }
 
+    public function index()
+    {
+        
+    }
+
     public function verification_data(Request $request)
     {
         $isAvailable = false;

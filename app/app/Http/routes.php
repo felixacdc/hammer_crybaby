@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'FrontController@index');
 
 // Authentication Routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
@@ -24,12 +22,14 @@ Route::post("auth/verify", "FrontController@verification_data");
 
 Route::group(['prefix' => 'admin', 'namespace' => '\admin', 'middleware' => ['auth', 'is_admin']], function() {
     Route::get('/', function() {
-        return 'admin';
+        return view('admin/dashboard');
     });
+
+    Route::resource('locals', 'LocalController');
 });
 
 Route::group(['prefix' => 'user', 'namespace' => '\user', 'middleware' => ['auth', 'is_invited']], function() {
     Route::get('/', function() {
-        return 'user';
+        return view('user/dashboard');
     });
 });
