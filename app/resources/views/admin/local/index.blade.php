@@ -28,7 +28,7 @@
             <div class="panel">
                 <header class="panel-heading">
                     <div class="panel-actions text-right">
-                        <button type="button" name="create" class="btn btn-primary btn-sm loadModal spaceRight" data-toggle='modal' data-target='#generalModal' data-url="/administrator/teacher/create" data-title="Crear Profesor">
+                        <button type="button" name="create" class="btn btn-primary btn-sm loadModal spaceRight" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/create" data-title="Crear Profesor">
                             <i class="icon wb-plus" aria-hidden="true"></i>
                             Crear Local
                         </button>
@@ -42,7 +42,9 @@
                             <th data-tablesaw-priority="persist" class="tablesaw-cell-persist">No.</th>
                             <th>Nombre</th>
                             <th>Telefono</th>
-                            <th>Facebook</th>
+                            <th>facebook</th>
+                            
+                            <th>Imagen</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -53,8 +55,9 @@
                                 <td>{{ $value->name }}</td>
                                 <td>{{ $value->phone }}</td>
                                 <td>{{ $value->facebook }}</td>
+                                <td>{{ $value->image}}</td>
                                 <td class="text-center">
-                                    <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/{{ $value->id }}" data-title="Ver Profesor">
+                                    <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/{{ $value->id }}" data-title="Ver Local">
                                         <i class="icon wb-eye" aria-hidden="true"></i>
                                     </button>
                                    <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/{{ $value->id }}/edit" data-title="Actualizar Profesor">

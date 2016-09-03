@@ -15,7 +15,9 @@ class CreateLocalsTable extends Migration
         Schema::create('locals', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('description');
             $table->string('phone');
+            $table->string('products');
             $table->string('facebook');
             $table->string('image');
             $table->timestamps();
