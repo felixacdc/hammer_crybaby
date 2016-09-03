@@ -35,3 +35,12 @@ Route::group(['prefix' => 'user', 'namespace' => '\user', 'middleware' => ['auth
     });
     
 });
+
+/*
+ * Email
+ */
+// Route::resource('alert','MailController');
+Route::group(['prefix' => 'email'], function(){
+	Route::resource('mail','MailController');
+	Route::resource('contact','ContactController');
+});
