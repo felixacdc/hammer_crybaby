@@ -146,6 +146,13 @@ return [
         App\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
 
+        /*
+         * Add Providers 
+         */
+        Laracasts\Flash\FlashServiceProvider::class,
+
+
+
     ],
 
     /*
@@ -195,6 +202,11 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
         'Form'      => Collective\Html\FormFacade::class,
         'Html'      => Collective\Html\HtmlFacade::class,
+
+        /*
+         * Add Aliases 
+         */
+        'Flash'     => Laracasts\Flash\Flash::class,
 
     ],
 

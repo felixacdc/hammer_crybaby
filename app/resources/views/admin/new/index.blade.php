@@ -16,7 +16,7 @@
     </style>
 @endsection
 
-@section('localsMenu', 'active')
+@section('newsMenu', 'active')
 
 @section('content')
     <!-- Page -->

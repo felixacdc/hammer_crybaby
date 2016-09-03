@@ -37,6 +37,9 @@ Route::group(['prefix' => 'admin', 'namespace' => '\admin', 'middleware' => ['au
     Route::get('news/showNews/{id}', 'NewsController@showNews');
     Route::get('news/showDelete/{id}', 'NewsController@showDelete');
     Route::resource('news', 'NewsController');
+
+    Route::get('events/showDelete/{id}', 'EventsController@showDelete');
+    Route::resource('events', 'EventsController');
 });
 
 Route::group(['prefix' => 'user', 'namespace' => '\user', 'middleware' => ['auth', 'is_invited']], function() {
@@ -45,4 +48,13 @@ Route::group(['prefix' => 'user', 'namespace' => '\user', 'middleware' => ['auth
         return view('user/dashboard');
     });
     
+});
+
+/*
+ * Email
+ */
+// Route::resource('alert','MailController');
+Route::group(['prefix' => 'email'], function(){
+	Route::resource('mail','MailController');
+	Route::resource('contact','ContactController');
 });
