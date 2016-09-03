@@ -18,7 +18,7 @@ class FrontController extends Controller
 
     public function index()
     {
-        
+        return view('page.index');        
     }
 
     public function verification_data(Request $request)
