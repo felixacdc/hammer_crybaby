@@ -19,10 +19,10 @@
                                 <li data-slotamount="7" data-masterspeed="500" data-thumb="/images/banner/homeslider01.jpg" data-saveperformance="off" data-title="Dominios">
                                     <img src="/images/banner/dummy.png" alt="slidebg1" data-lazyload="/images/banner/slidebg1.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                                     <div style="color: #FFFFFF; text-shadow: 2px 2px 2px #000" class="tp-caption blackmontserrat60 skewfromleftshort tp-resizeme rs-parallaxlevel-0" data-x="547" data-y="140" data-speed="500" data-start="2000" data-easing="Power3.easeInOut" data-splitin="chars" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1">
-                                        <!-- Somos parte -->
+                                        Carrion 
                                     </div>
                                     <div style="color: #FFFFFF; text-shadow: 2px 2px 2px #000" class="tp-caption blackmontserrat40 customin tp-resizeme rs-parallaxlevel-0" data-x="600" data-y="224" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="500" data-start="2150" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1">
-                                        <!-- de ti -->
+                                        Todo en moda
                                     </div>
                                     <div class="tp-caption greymontserrat18 customin tp-resizeme rs-parallaxlevel-0" data-x="720" data-y="373" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="500" data-start="2600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.05" data-endelementdelay="0.1">
                                         <div style="color: #FFFFFF; text-shadow: 1px 1px 1px #000">
@@ -44,14 +44,14 @@
                                 </li>
 
                                 <li data-slotamount="7" data-masterspeed="500" data-thumb="/images/banner/homeslider02.jpg" data-saveperformance="off" data-title="Responsive">
-                                    <img src="/images/banner/dummy.png" alt="slidebg3" data-lazyload="images/banner/slidebg3.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                                    <img src="/images/banner/dummy.png" alt="slidebg3" data-lazyload="/images/banner/slidebg2.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                                     <div style="color: #FFFFFF; text-shadow: 2px 2px 2px #000" class="tp-caption blackmontserrat60 skewfromleftshort tp-resizeme rs-parallaxlevel-0" data-x="-2" data-y="150" data-speed="500" data-start="2000" data-easing="Power3.easeInOut" data-splitin="chars" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1">
-                                        Diseño Web Responsive
+                                        Suplementos y Vitaminas
                                     </div>
 
                                     <div class="tp-caption greymontserrat18 customin tp-resizeme rs-parallaxlevel-0" data-x="10" data-y="282" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="500" data-start="2600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.05" data-endelementdelay="0.1">
                                         <div style="color: #FFFFFF; text-shadow: 1px 1px 1px #000">
-                                            <strong>Diseños que se adaptan</strong><br> a cualquier tipo de dispositivos movil.
+                                            <strong>Cuida tu salud</strong><br> <!-- a cualquier tipo de dispositivos movil. -->
                                         </div>
                                     </div>
                                     
@@ -68,25 +68,25 @@
 
                                 <li data-slotamount="7" data-masterspeed="1000" data-thumb="/images/banner/homeslider03.jpg" data-saveperformance="off" data-title="Hosting">
                                     
-                                    <img src="/images/banner/dummy.png" alt="slidebg3" data-lazyload="images/banner/slidebg4.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                                    <img src="/images/banner/dummy.png" alt="slidebg3" data-lazyload="images/banner/slidebg3.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                                     <div style="color: #FFFFFF; text-shadow: 2px 2px 2px #000" class="tp-caption blackmontserrat60 lfr randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="0" data-y="162" data-speed="1000" data-start="2900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000">
-                                        Paquetes de Hosting
+                                        La tecnologia
                                     </div>
 
                                     <div style="color: #FFFFFF; text-shadow: 2px 2px 2px #000" class="tp-caption blackmontserrat60 customin randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="70" data-y="242" data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;" data-speed="1000" data-start="3000" data-easing="Power4.easeOut" data-splitin="chars" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000">
-                                        con cPanel en español
+                                        al alcance de ti.
                                     </div>
                                     <div style="background: #497DAD; color:black" class="tp-caption blackboldbgmontserrat20 skewfromright randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="90" data-y="320" data-speed="1000" data-start="3500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000">
-                                        Hosting Personal
+                                        Tiendas Max
                                     </div>
                                     <div style="background: #497DAD; color:black" class="tp-caption blackboldbgmontserrat20 skewfromright randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="90" data-y="367" data-speed="1000" data-start="3600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000">
-                                        Hosting Básico
+                                        La Curacao
                                     </div>
                                     <div style="background: #497DAD; color:black" class="tp-caption blackboldbgmontserrat20 skewfromright randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="90" data-y="410" data-speed="1000" data-start="3700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000">
-                                        Hosting Empresarial
+                                        Casa Musical
                                     </div>
                                     <div style="background: #497DAD; color:black" class="tp-caption blackboldbgmontserrat20 skewfromright randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="90" data-y="454" data-speed="1000" data-start="3800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000">
-                                        Hosting Corporativo
+                                        Quick Photo
                                     </div>
                                     <div style="background: #86f138" class="tp-caption blackboldbgmontserrat207ccedf skewfromright randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="90" data-y="507" data-speed="1000" data-start="3900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000">
                                         y mucho Más...
