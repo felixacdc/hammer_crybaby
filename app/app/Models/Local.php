@@ -3,6 +3,8 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
+use DB;
 
 class Local extends Model
 {
@@ -12,7 +14,7 @@ class Local extends Model
     protected $fillable = ['name', 'phone','description','products', 'facebook', 'image'];
 
 
-    public function setPathAttribute($path){
+    public function setImageAttribute($path){
         if(!empty($path)){
                 $this->attributes['image']=Carbon::now()->second.$path->getClientOriginalName();
                 $name=Carbon::now()->second.$path->getClientOriginalName();

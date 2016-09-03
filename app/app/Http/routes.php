@@ -26,6 +26,8 @@ Route::group(['prefix' => 'admin', 'namespace' => '\admin', 'middleware' => ['au
     });
 
     Route::resource('locals', 'LocalController');
+    Route::get('locals/showDelete/{id}', 'LocalController@showDelete');
+
 
     Route::get('news/showPayments/{id}', 'NewsController@showPayments');
     Route::get('news/showDelete/{id}', 'NewsController@showDelete');

@@ -6,4 +6,4 @@
     </div>
 {!! Form::close() !!}
 
-{!! Html::script("backend/manager.js") !!}
+{!! Html::script("backend/local.js") !!}

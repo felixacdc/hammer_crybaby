@@ -29,7 +29,7 @@
 <div class="form-group">
     {!! Form::label('facebook','Faceebok:', ['class' => 'control-label col-lg-3']) !!}
     <div class="col-sm-9">
-        {!! Form::text("facebook", null, ['class' => 'form-control', 'placeholder' => 'Escribe el facebook', 'required' => 'required', 'autocomplete'=>'off']) !!}
+        {!! Form::text("facebook", null, ['class' => 'form-control', 'placeholder' => 'Escribe el facebook', 'autocomplete'=>'off']) !!}
     </div>
 </div>
 

@@ -43,7 +43,6 @@
                             <th>Nombre</th>
                             <th>Telefono</th>
                             <th>facebook</th>
-                            
                             <th>Imagen</th>
                             <th>Acciones</th>
                         </tr>
@@ -55,7 +54,7 @@
                                 <td>{{ $value->name }}</td>
                                 <td>{{ $value->phone }}</td>
                                 <td>{{ $value->facebook }}</td>
-                                <td>{{ $value->image}}</td>
+                                <td> <img src="/image/{{$value->image}}" alt="" style="width:80px;"></td>
                                 <td class="text-center">
                                     <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/{{ $value->id }}" data-title="Ver Local">
                                         <i class="icon wb-eye" aria-hidden="true"></i>
