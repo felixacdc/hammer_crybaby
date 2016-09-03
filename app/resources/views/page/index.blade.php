@@ -46,12 +46,12 @@
                                 <li data-slotamount="7" data-masterspeed="500" data-thumb="/images/banner/homeslider02.jpg" data-saveperformance="off" data-title="Responsive">
                                     <img src="/images/banner/dummy.png" alt="slidebg3" data-lazyload="images/banner/slidebg3.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                                     <div style="color: #FFFFFF; text-shadow: 2px 2px 2px #000" class="tp-caption blackmontserrat60 skewfromleftshort tp-resizeme rs-parallaxlevel-0" data-x="-2" data-y="150" data-speed="500" data-start="2000" data-easing="Power3.easeInOut" data-splitin="chars" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1">
-                                        Diseño Web Responsive
+                                        Centro Comercial La Trinidad.
                                     </div>
 
                                     <div class="tp-caption greymontserrat18 customin tp-resizeme rs-parallaxlevel-0" data-x="10" data-y="282" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="500" data-start="2600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.05" data-endelementdelay="0.1">
                                         <div style="color: #FFFFFF; text-shadow: 1px 1px 1px #000">
-                                            <strong>Diseños que se adaptan</strong><br> a cualquier tipo de dispositivos movil.
+                                            <strong>Centro comercial</strong><br> somos una familia.
                                         </div>
                                     </div>
                                     
@@ -70,23 +70,23 @@
                                     
                                     <img src="/images/banner/dummy.png" alt="slidebg3" data-lazyload="images/banner/slidebg4.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                                     <div style="color: #FFFFFF; text-shadow: 2px 2px 2px #000" class="tp-caption blackmontserrat60 lfr randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="0" data-y="162" data-speed="1000" data-start="2900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000">
-                                        Paquetes de Hosting
+                                        La trinidad
                                     </div>
 
                                     <div style="color: #FFFFFF; text-shadow: 2px 2px 2px #000" class="tp-caption blackmontserrat60 customin randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="70" data-y="242" data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;" data-speed="1000" data-start="3000" data-easing="Power4.easeOut" data-splitin="chars" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000">
-                                        con cPanel en español
+                                        Campero
                                     </div>
                                     <div style="background: #497DAD; color:black" class="tp-caption blackboldbgmontserrat20 skewfromright randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="90" data-y="320" data-speed="1000" data-start="3500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000">
-                                        Hosting Personal
+                                        Mac
                                     </div>
                                     <div style="background: #497DAD; color:black" class="tp-caption blackboldbgmontserrat20 skewfromright randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="90" data-y="367" data-speed="1000" data-start="3600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000">
-                                        Hosting Básico
+                                        Barber Shop
                                     </div>
                                     <div style="background: #497DAD; color:black" class="tp-caption blackboldbgmontserrat20 skewfromright randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="90" data-y="410" data-speed="1000" data-start="3700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000">
-                                        Hosting Empresarial
+                                        Shaddai
                                     </div>
                                     <div style="background: #497DAD; color:black" class="tp-caption blackboldbgmontserrat20 skewfromright randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="90" data-y="454" data-speed="1000" data-start="3800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000">
-                                        Hosting Corporativo
+                                        Optica
                                     </div>
                                     <div style="background: #86f138" class="tp-caption blackboldbgmontserrat207ccedf skewfromright randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="90" data-y="507" data-speed="1000" data-start="3900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000">
                                         y mucho Más...
@@ -210,23 +210,6 @@
                                     <div class="column col-md-6 col-sm-12">
                                         <div class="empty-space-40"></div>
                                         <div class="tabbable tabs-primary tabs-left">
-                                            <ul class="nav nav-tabs" role="tablist">
-                                                <li class="active">
-                                                    <a href="#tab-13" role="tab" data-toggle="tab">
-                                                        <img src="/images/services/hosting.png" alt="">
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#tab-14" role="tab" data-toggle="tab">
-                                                        <img src="/images/services/domains.png" alt="">
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#tab-15" role="tab" data-toggle="tab">
-                                                        <img src="/images/services/websites.png" alt="">
-                                                    </a>
-                                                </li>
-                                            </ul>
                                             <div class="tab-content">
                                                 <div style="text-align:justify" class="tab-pane fade active in" id="tab-13">
                                                     <div class="text-block">
@@ -297,30 +280,13 @@
                                                         <p>
                                                             Es de vital importancia para una empresa poseer una imagen formal y presentable con la que sus clientes puedan identificar su marca o servicios tan solo con ver el simbolo emblemático.
                                                         </p>
-                                                        <h5>Tarjetas de presentación</h5>
+                                                        <h5>Proximos servicios de club la trinidad</h5>
                                                         <p>
                                                             La primera impresión es la que cuenta y que mejor causarla con una tarjeta de presentación que posea un diseño personalizado y moderno que se ajuste a la genialidad de su profesión o empresa.
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <ul class="nav nav-tabs" role="tablist">
-                                                <li>
-                                                    <a href="#tab-16" role="tab" data-toggle="tab">
-                                                        <img src="images/services/streaming.png" alt="">
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#tab-17" role="tab" data-toggle="tab">
-                                                        <img src="images/services/systems.png" alt="">
-                                                    </a>
-                                                </li>
-                                                <li  class="active">
-                                                    <a href="#tab-18" role="tab" data-toggle="tab">
-                                                        <img src="images/services/graphic.png" alt="">
-                                                    </a>
-                                                </li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -362,188 +328,95 @@
                                 </div>
                             </div>
                                                        
-                            <div class="row row-custom-padding"> 
-                                <div class="column col-md-6 col-sm-6">
-                                
-                                   
-                                    <div class="testimonial testimonial-style-left bg-transparent">
-                                        <div class="caroufredsel" data-visible="1" data-scroll-fx="scroll" data-speed="5000" data-responsive="1" data-infinite="1" data-autoplay="0">
-                                            <div class="caroufredsel-wrap">
-                                                <ul class="caroufredsel-items">
-                                                    <li class="caroufredsel-item">
-                                                        <div class="testimonial-wrap">
-                                                            <div class="testimonial-avatar-wrap">
-                                                                <div class="testimonial-avatar">
-                                                                    <img src="/images/testimonials/testimonial-1.jpg" alt="avatar"/>
-                                                                </div>
-                                                            </div>
-                                                            <div class="testimonial-info-wrap">
-                                                                <div class="testimonial-author">Carlos Cabrera</div>
-                                                                <div class="testimonial-company">Administrador CBC</div>
-                                                                <div style="text-align:justify" class="testimonial-text">
-                                                                    <span>&ldquo;</span>
-                                                                     Tenia la necesidad de dar a conocer el colegio por medio de un sitio web, me comentaron de idea.com.gt y realmente quede satisfecho por la rapidez y calidad del trabajo que este equipo realiza.
-                                                                    <span>&rdquo;</span>
-                                                                    <div style="text-align:right">       
-                                                                        <a target="_blank" href="http://colegiobuenacreacion.reu.gt">colegiobuenacreación.reu.gt</a>
+                            <div class="row row-custom-padding">
+                                @foreach($newsclass as $newClass)
+                                    <div class="column col-md-6 col-sm-6">
+                                        <div class="testimonial testimonial-style-left bg-transparent">
+                                            <div class="caroufredsel" data-visible="1" data-scroll-fx="scroll" data-speed="5000" data-responsive="1" data-infinite="1" data-autoplay="0">
+                                                <div class="caroufredsel-wrap">
+                                                    <ul class="caroufredsel-items">
+                                                        <li class="caroufredsel-item">
+                                                            <div class="testimonial-wrap">
+                                                                <div class="testimonial-avatar-wrap">
+                                                                    <div class="testimonial-avatar">
+                                                                        <img src="/image/{{ $newClass->image }}" alt="avatar"/>
                                                                     </div>
                                                                 </div>
+                                                                <div class="testimonial-info-wrap">
+                                                                    <div class="testimonial-author">{{ $newClass->local->name }}</div>
+                                                                    <div class="testimonial-company">{{ $newClass->date }}</div>
+                                                                    <div style="text-align:justify" class="testimonial-text">
+                                                                        <span>&ldquo;</span>
+                                                                         {{ $newClass->description }}
+                                                                        <span>&rdquo;</span>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="caroufredsel-pagination"></div>
                                             </div>
-                                            <div class="caroufredsel-pagination"></div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="column col-md-6 col-sm-6">
-                                    <div class="testimonial testimonial-style-left bg-transparent">
-                                        <div class="caroufredsel" data-visible="1" data-scroll-fx="scroll" data-speed="5000" data-responsive="1" data-infinite="1" data-autoplay="0">
-                                            <div class="caroufredsel-wrap">
-                                                <ul class="caroufredsel-items">
-                                                    <li class="caroufredsel-item">
-                                                        <div class="testimonial-wrap">
-                                                            <div class="testimonial-avatar-wrap">
-                                                                <div class="testimonial-avatar">
-                                                                    <img src="/images/testimonials/testimonial-2.jpg" alt="avatar"/>
-                                                                </div>
-                                                            </div>
-                                                            <div class="testimonial-info-wrap">
-                                                                <div class="testimonial-author">Marisela López</div>
-                                                                <div class="testimonial-company">Estilista Salón y Spá</div>
-                                                                <div style="text-align:justify" class="testimonial-text">
-                                                                    <span>&ldquo;</span>
-                                                                     Mis clientes agradecen la forma en que ellos pueden inscribirse a los sorteos de tratamientos y yo estoy muy contenta por el trabajo que el equipo de desarrollo de idea.com.gt supo plasmar mis ideas en un sitio web.
-                                                                    <span>&rdquo;</span>
-                                                                    <div style="text-align:right">       
-                                                                        <a target="_blank" href="http://marbella.spa.gt">marbella.spa.gt</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="caroufredsel-pagination"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">    
-                                <div class="column col-md-6 col-sm-6">
-                                    <div class="testimonial testimonial-style-left bg-transparent">
-                                        <div class="caroufredsel" data-visible="1" data-scroll-fx="scroll" data-speed="5000" data-responsive="1" data-infinite="1" data-autoplay="0">
-                                            <div class="caroufredsel-wrap">
-                                                <ul class="caroufredsel-items">
-                                                    <li class="caroufredsel-item">
-                                                        <div class="testimonial-wrap">
-                                                            <div class="testimonial-avatar-wrap">
-                                                                <div class="testimonial-avatar">
-                                                                    <img src="/images/testimonials/testimonial-3.jpg" alt="avatar"/>
-                                                                </div>
-                                                            </div>
-                                                            <div class="testimonial-info-wrap">
-                                                                <div class="testimonial-author">Agustin Chic</div>
-                                                                <div class="testimonial-company">Gerente de ventas</div>
-                                                                <div style="text-align:justify" class="testimonial-text">
-                                                                    <span>&ldquo;</span>
-                                                                     Es importante darle una buena imagen a un negocio y para esto es necesario encontrar gente creativa que pueda plasmar en una imagen lo que uno tiene en mente.
-                                                                    <span>&rdquo;</span>
-                                                                    <div style="text-align:right">       
-                                                                        <a href="" class="view-action" data-toggle="modal" data-target="#modal_01">Autollantas Chivalan</a>
-                                                                    </div>
-
-                                                                    <!-- MODAL -->
-                                                                    <div class="modal fade" id="modal_01" tabindex="-1" role="dialog" aria-hidden="true">
-                                                                        <div class="modal-dialog modal-dialog-center modal-default">
-                                                                            <div class="modal-content">
-                                                                                <div class="modal-header">
-                                                                                    <button type="button" class="close" data-dismiss="modal">
-                                                                                        <span aria-hidden="true">&times;</span>
-                                                                                        <span class="sr-only">Close</span>
-                                                                                    </button>
-                                                                                    <h4 class="modal-title">Autollantas Chivalan</h4>
-                                                                                </div>
-                                                                                <div class="modal-body">
-                                                                                    <img alt="Chivalan" src="/images/gallery/autollanatas_chivalan_g.jpg" />
-                                                                                    <br>
-                                                                                    <p style="text-align:right">Retalhuleu, Retalhuleu, Guatemala.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="caroufredsel-pagination"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="column col-md-6 col-sm-6">
-                                    <div class="testimonial testimonial-style-left bg-transparent">
-                                        <div class="caroufredsel" data-visible="1" data-scroll-fx="scroll" data-speed="5000" data-responsive="1" data-infinite="1" data-autoplay="0">
-                                            <div class="caroufredsel-wrap">
-                                                <ul class="caroufredsel-items">
-                                                    <li class="caroufredsel-item">
-                                                        <div class="testimonial-wrap">
-                                                            <div class="testimonial-avatar-wrap">
-                                                                <div class="testimonial-avatar">
-                                                                    <img src="/images/testimonials/testimonial-4.jpg" alt="avatar"/>
-                                                                </div>
-                                                            </div>
-                                                            <div class="testimonial-info-wrap">
-                                                                <div class="testimonial-author">Andrea González</div>
-                                                                <div class="testimonial-company">Gerente de ventas</div>
-                                                                <div style="text-align:justify" class="testimonial-text">
-                                                                    <span>&ldquo;</span>
-                                                                     Solicite la creación de la imagen corporativa de nuestra boutique aquí en España y diseñarón un logotipo y unas tarjetas de presentación preciosas, realmente el trabajo ha sido maravilloso.
-                                                                    <span>&rdquo;</span>
-                                                                    <div style="text-align:right">       
-                                                                        <a href="" class="view-action" data-toggle="modal" data-target="#modal_02">LE GABBAN</a>
-                                                                    </div>
-
-                                                                    <!-- MODAL -->
-                                                                    <div class="modal fade" id="modal_02" tabindex="-1" role="dialog" aria-hidden="true">
-                                                                        <div class="modal-dialog modal-dialog-center modal-default">
-                                                                            <div class="modal-content">
-                                                                                <div class="modal-header">
-                                                                                    <button type="button" class="close" data-dismiss="modal">
-                                                                                        <span aria-hidden="true">&times;</span>
-                                                                                        <span class="sr-only">Close</span>
-                                                                                    </button>
-                                                                                    <h4 class="modal-title">LE GABBAN</h4>
-                                                                                </div>
-                                                                                <div class="modal-body">
-                                                                                    <img alt="Chivalan" src="/images/cards/tarjeta_09_g.jpg" />
-                                                                                    <br>
-                                                                                    <p style="text-align:right">Santander, España.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div> 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="caroufredsel-pagination"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
 
                         </div>
                     </div>
                     <!-- FIN CLIENTES -->
+
+                    <!-- CLIENTES -->
+                    <div id="Noticias02" class="row">
+                        <div class="container">
+                        <br>
+
+                            <div class="row">
+                                <div class="column col-md-12 text-center">
+                                    <h2>Locales</h2>
+                                    <div class="text-block">
+                                        <p>
+                                            <h4>Centro Comercial La Trinidad</h4>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @foreach($categories as $category)
+                                <h2>{{ $category->description }}</h2>
+                                @foreach($category->locals as $local)
+                                    <p>{{ $local->name }}</p>
+                                    <p>{{ $local->description }}</p>
+                                    <p>{{ $local->products }}</p>
+                                    <p>{{ $local->phone }}</p>
+                                    <img src="/image/{{ $local->image }}" alt="" style="width: 300px;">
+                                @endforeach
+                            @endforeach
+                        </div>
+                    </div>
+
+                    <!-- CLIENTES -->
+                    <div id="Noticias02" class="row">
+                        <div class="container">
+                        <br>
+
+                            <div class="row">
+                                <div class="column col-md-12 text-center">
+                                    <h2>Eventos</h2>
+                                    <div class="text-block">
+                                        <p>
+                                            <h4>Centro Comercial La Trinidad</h4>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @foreach($events as $event)
+                                <h2>{{ $event->description }}</h2>
+                                <p>{{ $event->date }}</p>
+                                <p>{{ $event->importance }} puntos</p>
+                            @endforeach
+                        </div>
+                    </div>
 
                     <!-- DIVISOR 3 -->
                     <div class="row section-counter bg-image">

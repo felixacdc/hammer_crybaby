@@ -17,7 +17,7 @@
 
         <div class="page-content vertical-align-middle">
             <div data-wow-duration="2s" data-wow-delay="0.5s" class="wow zoomInDown brand">
-                <img class="brand-img wow zoomInDown" src="/template/images/logo_p.png" alt="...">
+                <img class="brand-img wow zoomInDown" src="/template/images/logo_p.png" alt="..." style="width: 200px !important;">
                 <!-- <h2 class="brand-text">Remark</h2> -->
             </div>
 

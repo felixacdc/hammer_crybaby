@@ -53,7 +53,7 @@
 											<h3 class="megamenu-title">{{ $category->description }}<span class="caret"></span></h3>
 											<ul class="dropdown-menu">
 												@foreach($category->locals as $local)
-													<li><a title="Shop Full With" href="#Hosting">$local->name</a></li>
+													<li><a title="Shop Full With" href="#Hosting">{{ $local->name }}</a></li>
 												@endforeach
 											</ul>
 										</li>

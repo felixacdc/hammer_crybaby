@@ -16,7 +16,7 @@
     </style>
 @endsection
 
-@section('newsMenu', 'active')
+@section('eventsMenu', 'active')
 
 @section('content')
     <!-- Page -->
@@ -28,7 +28,7 @@
             <div class="panel">
                 <header class="panel-heading">
                     <div class="panel-actions text-right">
-                        <button type="button" name="create" class="btn btn-primary btn-sm loadModal spaceRight" data-toggle='modal' data-target='#generalModal' data-url="/admin/events/create" data-title="Crear Profesor">
+                        <button type="button" name="create" class="btn btn-primary btn-sm loadModal spaceRight" data-toggle='modal' data-target='#generalModal' data-url="/admin/events/create" data-title="Crear evento">
                             <i class="icon wb-plus" aria-hidden="true"></i>
                             Crear Evento
                         </button>
@@ -54,10 +54,10 @@
                                 <td>{{ $value->date }}</td>
                                 <td>{{ $value->importance }} puntos</td>
                                 <td class="text-center">
-                                   <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/events/{{ $value->id }}/edit" data-title="Actualizar Profesor">
+                                   <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/events/{{ $value->id }}/edit" data-title="Actualizar evento">
                                        <i class="icon wb-pencil" aria-hidden="true"></i>
                                    </button>
-                                   <button type="button" name="delete" class="btn btn-icon btn-danger btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/events/showDelete/{{ $value->id }}" data-title="Eliminar Profesor">
+                                   <button type="button" name="delete" class="btn btn-icon btn-danger btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/events/showDelete/{{ $value->id }}" data-title="Eliminar evento">
                                        <i class="icon wb-trash" aria-hidden="true"></i>
                                    </button>
                                 </td>

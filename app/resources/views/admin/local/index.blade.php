@@ -28,7 +28,7 @@
             <div class="panel">
                 <header class="panel-heading">
                     <div class="panel-actions text-right">
-                        <button type="button" name="create" class="btn btn-primary btn-sm loadModal spaceRight" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/create" data-title="Crear Profesor">
+                        <button type="button" name="create" class="btn btn-primary btn-sm loadModal spaceRight" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/create" data-title="Crear local">
                             <i class="icon wb-plus" aria-hidden="true"></i>
                             Crear Local
                         </button>
@@ -59,10 +59,10 @@
                                     <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/{{ $value->id }}" data-title="Ver Local">
                                         <i class="icon wb-eye" aria-hidden="true"></i>
                                     </button>
-                                   <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/{{ $value->id }}/edit" data-title="Actualizar Profesor">
+                                   <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/{{ $value->id }}/edit" data-title="Actualizar local">
                                        <i class="icon wb-pencil" aria-hidden="true"></i>
                                    </button>
-                                   <button type="button" name="delete" class="btn btn-icon btn-danger btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/showDelete/{{ $value->id }}" data-title="Eliminar Profesor">
+                                   <button type="button" name="delete" class="btn btn-icon btn-danger btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/showDelete/{{ $value->id }}" data-title="Eliminar local">
                                        <i class="icon wb-trash" aria-hidden="true"></i>
                                    </button>
                                 </td>

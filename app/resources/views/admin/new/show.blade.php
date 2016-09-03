@@ -18,10 +18,10 @@
                 <td> {{ $data->date }} </td>
                 <td> <img src="/image/{{ $data->image }}" style="width:60px;"> </td>
                 <td class="text-center">
-                    <button type="button" name="edit" class="btn btn-info btn-sm reLoadModal spaceRight tooltips" data-url="/admin/news/{{ $data->id }}/edit" data-title="Actualizar Pago" title="" data-placement="top" data-toggle="tooltip" data-original-title="Editar">
+                    <button type="button" name="edit" class="btn btn-info btn-sm reLoadModal spaceRight tooltips" data-url="/admin/news/{{ $data->id }}/edit" data-title="Actualizar noticia" title="" data-placement="top" data-toggle="tooltip" data-original-title="Editar noticia">
                         <i class="fa fa-refresh"></i>
                     </button>
-                    <button type="button" name="delete" class="btn btn-danger btn-sm reLoadModal spaceRight tooltips" data-url="/admin/news/showDelete/{{ $data->id }}" data-title="Eliminar Pago" title="" data-placement="top" data-toggle="tooltip" data-original-title="Eliminar">
+                    <button type="button" name="delete" class="btn btn-danger btn-sm reLoadModal spaceRight tooltips" data-url="/admin/news/showDelete/{{ $data->id }}" data-title="Eliminar noticia" title="" data-placement="top" data-toggle="tooltip" data-original-title="Eliminar">
                         <i class="fa fa-trash-o"></i>
                     </button>
                 </td>

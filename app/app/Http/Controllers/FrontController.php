@@ -9,6 +9,8 @@ use App\Http\Controllers\Controller;
 use App\User;
 use Auth;
 use App\Models\Category;
+use App\Models\NewClass;
+use App\Models\Event;
 
 class FrontController extends Controller
 {
@@ -20,7 +22,9 @@ class FrontController extends Controller
     public function index()
     {
         $categories = Category::all();
-        return view('page.index', compact("categories"));        
+        $newsclass = NewClass::all();
+        $events = Event::all();
+        return view('page.index', compact("categories", "newsclass", "events"));        
     }
 
     public function verification_data(Request $request)

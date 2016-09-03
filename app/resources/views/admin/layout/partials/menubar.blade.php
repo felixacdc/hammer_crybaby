@@ -27,6 +27,12 @@
                 <span class="site-menu-title">Categorias</span>
               </a>
             </li>
+            <li class="site-menu-item @yield('eventsMenu', 'default')">
+              <a href="{{ url('/admin/events') }}" data-slug="dashboard">
+                <i class="site-menu-icon wb-dashboard" aria-hidden="true"></i>
+                <span class="site-menu-title">Eventos</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
