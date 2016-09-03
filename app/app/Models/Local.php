@@ -16,6 +16,6 @@ class Local extends Model
 
     public function news()
     {
-        $this->hasMany(New::class, 'id_local');
+        return $this->hasMany('App\Models\New', 'id_local');
     }
 }

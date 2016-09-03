@@ -16,6 +16,7 @@ class CreateNewsTable extends Migration
             $table->bigIncrements('id');
             $table->longText('description');
             $table->string('image');
+            $table->date('date');
             $table->bigInteger('id_local')->unsigned();
             $table->timestamps();
 
