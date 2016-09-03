@@ -35,3 +35,11 @@
 <div class="modal-footer">
    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
 </div>
+
+<script>
+    $('.reLoadModal').on('click', function(e){
+        e.preventDefault();
+        var loadModal = new LoadModal($("#containerBase"), $(".titleEdit"), $(this));
+        loadModal.prepareView();
+    });
+</script>

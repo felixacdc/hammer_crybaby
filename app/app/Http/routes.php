@@ -29,7 +29,7 @@ Route::group(['prefix' => 'admin', 'namespace' => '\admin', 'middleware' => ['au
     Route::get('locals/showDelete/{id}', 'LocalController@showDelete');
 
 
-    Route::get('news/showPayments/{id}', 'NewsController@showPayments');
+    Route::get('news/showNews/{id}', 'NewsController@showNews');
     Route::get('news/showDelete/{id}', 'NewsController@showDelete');
     Route::resource('news', 'NewsController');
 });

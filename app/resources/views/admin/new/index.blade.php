@@ -48,7 +48,7 @@
                                 <td>{{ $value->phone }}</td>
                                 <td>{{ $value->facebook }}</td>
                                 <td class="text-center">
-                                    <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/news/showPayments/{{ $value->id }}" data-title="Ver Noticias">
+                                    <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/news/showNews/{{ $value->id }}" data-title="Ver Noticias">
                                         <i class="icon wb-eye" aria-hidden="true"></i>
                                     </button>
                                    <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal loadNews" data-toggle='modal' data-target='#generalModal' data-url="/admin/news/create" data-title="Crear Noticia" data-id="{{ $value->id }}">
