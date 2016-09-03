@@ -29,7 +29,9 @@ Route::group(['prefix' => 'admin', 'namespace' => '\admin', 'middleware' => ['au
 });
 
 Route::group(['prefix' => 'user', 'namespace' => '\user', 'middleware' => ['auth', 'is_invited']], function() {
+
     Route::get('/', function() {
         return view('user/dashboard');
     });
+    
 });

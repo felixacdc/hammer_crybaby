@@ -5,7 +5,11 @@
     */
     class IsInvited extends IsType
     {
-        $this->getRedirect();
-
-        return 2;
+        public function getType()
+        {
+            $this->getRedirect();
+            
+            return 2;    
+        }
+        
     }
