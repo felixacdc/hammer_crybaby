@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLocalsTable extends Migration
+class CreateCategoryTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,14 +12,9 @@ class CreateLocalsTable extends Migration
      */
     public function up()
     {
-        Schema::create('locals', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('name');
+        Schema::create('categories', function (Blueprint $table) {
+            $table->increments('id');
             $table->string('description');
-            $table->string('phone');
-            $table->string('products');
-            $table->string('facebook');
-            $table->string('image');
             $table->timestamps();
         });
     }
@@ -31,6 +26,6 @@ class CreateLocalsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('locals');
+        Schema::drop('categories');
     }
 }

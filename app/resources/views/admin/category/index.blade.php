@@ -28,32 +28,28 @@
             <div class="panel">
                 <header class="panel-heading">
                     <div class="panel-actions text-right">
-                        <button type="button" name="create" class="btn btn-primary btn-sm loadModal spaceRight" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/create" data-title="Crear Profesor">
+                        <button type="button" name="create" class="btn btn-primary btn-sm loadModal spaceRight" data-toggle='modal' data-target='#generalModal' data-url="/admin/categories/create" data-title="Crear Categoria">
                             <i class="icon wb-plus" aria-hidden="true"></i>
-                            Crear Local
+                            Crear Categoria
                         </button>
                     </div>
-                    <h3 class="panel-title">Locales</h3>
+                    <h3 class="panel-title">Categorias</h3>
                 </header>
                 <div class="panel-body">
                     <table class="table tablesaw table-hover dataTable table-striped tablesaw-swipe tablesaw-fix-persist" data-tablesaw-mode="swipe" data-tablesaw-minimap="" id="table-9456" data-plugin="dataTable">
                     <thead>
                         <tr>
                             <th data-tablesaw-priority="persist" class="tablesaw-cell-persist">No.</th>
-                            <th>Nombre</th>
-                            <th>Telefono</th>
-                            <th>facebook</th>
+                            <th>Descripción</th>
                             <th>Imagen</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($locals as $key => $value)
+                        @foreach($category as $key => $value)
                             <tr>
                                 <td>{{ $key + 1 }}</td>
-                                <td>{{ $value->name }}</td>
-                                <td>{{ $value->phone }}</td>
-                                <td>{{ $value->facebook }}</td>
+                                <td>{{ $value->description }}</td>
                                 <td> <img src="/image/{{$value->image}}" alt="" style="width:80px;"></td>
                                 <td class="text-center">
                                     <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/{{ $value->id }}" data-title="Ver Local">

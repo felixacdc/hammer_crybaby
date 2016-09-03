@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\createLocalRequest;
+use App\Http\Requests\editLocalRequest;
 
 use App\Models\Local;
 
@@ -18,7 +20,7 @@ class LocalController extends Controller
      */
     public function index()
     {
-        $locals = Local::all();
+        $locals=Local::orderBy('id','desc')->get();
         return view('admin.local.index', compact('locals'));
     }
 
@@ -29,7 +31,7 @@ class LocalController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.local.create');
     }
 
     /**
@@ -38,9 +40,14 @@ class LocalController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(createLocalRequest $request)
     {
-        //
+        try {
+            Local::create($request->all());
+            return redirect('admin/locals')->with('message','Registro creado correctamente.');
+        } catch (Exception $e) {
+            return redirect('admin/locals')->with("error", "No se pudo realizar la acción.");
+        }
     }
 
     /**
@@ -51,7 +58,8 @@ class LocalController extends Controller
      */
     public function show($id)
     {
-        //
+        $dataShow=Local::find($id);
+        return view('admin.local.show',compact('dataShow'));
     }
 
     /**
@@ -62,7 +70,13 @@ class LocalController extends Controller
      */
     public function edit($id)
     {
-        //
+        $dataEdit=Local::find($id);
+
+        if(empty($dataEdit))
+            abort(404);
+
+
+          return view('admin.local.edit',compact('dataEdit'));
     }
 
     /**
@@ -72,9 +86,27 @@ class LocalController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(editLocalRequest $request, $id)
     {
-        //
+        try {
+
+            $local=Local::findOrFail($id);
+            $local->update($request->all());
+            return redirect ('admin/locals')->with('message','Registro actualizado correctamente.');
+
+        } catch (Exception $e) {
+
+            return redirect('admin/locals')->with("error", "No se pudo realizar la acción.");
+
+        }
+    }
+
+    public function showDelete($id)
+    {
+        if ( Local::where('id', $id)->count() != 0 )
+             return view('admin.local.delete')->with('id', $id);
+         else
+             abort(404);
     }
 
     /**
@@ -85,6 +117,14 @@ class LocalController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try {
+              Local::findOrFail($id)->delete();
+              return redirect('admin/locals')->with('message','Registro eliminado correctamente.');
+
+        } catch (Exception $e) {
+              return redirect('admin/locals')->with("error", "No se pudo realizar la acción.");
+
+
+        }
     }
 }

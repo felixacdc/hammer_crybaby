@@ -27,12 +27,6 @@
             <!-- Panel Basic -->
             <div class="panel">
                 <header class="panel-heading">
-                    <div class="panel-actions text-right">
-                        <button type="button" name="create" class="btn btn-primary btn-sm loadModal spaceRight" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/create" data-title="Crear Profesor">
-                            <i class="icon wb-plus" aria-hidden="true"></i>
-                            Crear Local
-                        </button>
-                    </div>
                     <h3 class="panel-title">Locales</h3>
                 </header>
                 <div class="panel-body">
@@ -42,8 +36,7 @@
                             <th data-tablesaw-priority="persist" class="tablesaw-cell-persist">No.</th>
                             <th>Nombre</th>
                             <th>Telefono</th>
-                            <th>facebook</th>
-                            <th>Imagen</th>
+                            <th>Facebook</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -54,16 +47,12 @@
                                 <td>{{ $value->name }}</td>
                                 <td>{{ $value->phone }}</td>
                                 <td>{{ $value->facebook }}</td>
-                                <td> <img src="/image/{{$value->image}}" alt="" style="width:80px;"></td>
                                 <td class="text-center">
-                                    <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/{{ $value->id }}" data-title="Ver Local">
+                                    <button type="button" name="show" class="btn btn-icon btn-success btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/news/showNews/{{ $value->id }}" data-title="Ver Noticias">
                                         <i class="icon wb-eye" aria-hidden="true"></i>
                                     </button>
-                                   <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/{{ $value->id }}/edit" data-title="Actualizar Profesor">
+                                   <button type="button" name="edit" class="btn btn-icon btn-info btn-sm loadModal loadNews" data-toggle='modal' data-target='#generalModal' data-url="/admin/news/create" data-title="Crear Noticia" data-id="{{ $value->id }}">
                                        <i class="icon wb-pencil" aria-hidden="true"></i>
-                                   </button>
-                                   <button type="button" name="delete" class="btn btn-icon btn-danger btn-sm loadModal" data-toggle='modal' data-target='#generalModal' data-url="/admin/locals/showDelete/{{ $value->id }}" data-title="Eliminar Profesor">
-                                       <i class="icon wb-trash" aria-hidden="true"></i>
                                    </button>
                                 </td>
                             </tr>
@@ -90,4 +79,11 @@
     {!! Html::script('general/js/my.table.js') !!}
     {!! Html::script('template/vendor/formvalidation/formValidation.min.js') !!}
     {!! Html::script('template/vendor/formvalidation/framework/bootstrap.min.js') !!}
+
+    <script>
+        $('.loadNews').on('click', function(e){
+            e.preventDefault();
+            id_local = $(this).data('id');
+        });
+    </script>
 @endsection
