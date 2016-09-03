@@ -10,6 +10,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Local;
 use App\Models\NewClass;
 
+use App\Http\Requests\NewRequest;
+
 class NewsController extends Controller
 {
     /**
@@ -25,7 +27,7 @@ class NewsController extends Controller
 
     public function showPayments($id)
     {
-        NewClass::where('id_local', $id)->get();
+        $news = NewClass::where('id_local', $id)->get();
         return view('admin.new.show', compact("news"));
     }
 
@@ -36,7 +38,7 @@ class NewsController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.new.create');
     }
 
     /**
@@ -45,9 +47,15 @@ class NewsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(NewRequest $request)
     {
-        //
+        try {
+            NewClass::create($request->all());
+            return redirect('admin/news')->with("message", "Registro creado correctamente.");
+
+        } catch (\Exception $e) {
+            return redirect('admin/news')->with("error", "No se pudo realizar la acción.");
+        }
     }
 
     /**
