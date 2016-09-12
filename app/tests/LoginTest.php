@@ -11,8 +11,24 @@ class LoginTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testLoadView()
     {
-        $this->assertTrue(true);
+        $this->visit('auth/login')
+                ->see('BIENVENIDO')
+                ->see('2015. TODOS LOS DERECHOS RESERVADOS');
+
+        $this->assertResponseOk();
+    }
+
+    public function testAjaxOk()
+    {
+        $this->post('auth/verify', ['user' => 'admin', 'password' => '12345678'])
+                ->see('ok');
+    }
+
+    public function testAjaxError()
+    {
+        $this->post('auth/verify', ['user' => 'nohay', 'password' => 'abcdefghijklm'])
+                ->see('error');
     }
 }
